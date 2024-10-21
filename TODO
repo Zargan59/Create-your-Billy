@@ -1,0 +1,8 @@
+
+Définir les changements dans les cas particuliers
+Supprimer une partie
+Ajouter un inventaire
+Pouvoir incrémenter les stats manuellement
+Définir les pv et les pv max / pv max de base et pvmax modifié
+
+Vérifier qu'il n'y'ait pas d'erreur lors de l'ajout de stats hors starter sinon besoin de recalculer à chaque fois l'inventaire

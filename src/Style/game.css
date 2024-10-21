@@ -1,0 +1,126 @@
+.gameContent{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 50px;
+}
+.startAdventureContent{
+    border: 8px solid black;
+    border-image: url('../Image/Border.svg')30 ;
+    width: 50%;
+    margin: 0 auto 50px ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    padding: 25px;
+}
+select {
+    background-color: transparent;
+    border: 8px solid black;
+    border-image: url('../Image/Border.svg')30 ;
+    outline: 0px;
+    cursor: pointer;
+}
+.adventureStarter{
+    display: flex;
+    gap: 10px;
+    padding: 5px;
+}
+
+.button{
+    border: 8px solid black;
+    border-image: url('../Image/Border.svg')30 ;
+    /* width: 50px; */
+    background-color: transparent;
+    padding:0 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    position: relative;
+}
+
+.button:hover{
+    color: rgb(49, 49, 49);
+
+}
+
+
+
+
+.billy{
+    text-align: center;
+    margin-bottom: 5px;
+}
+.fichePersoContent{
+    border: 2px solid black;
+    max-height: 60vh;
+    width: 500px;
+    margin-left: auto;
+    padding: 20px;
+}
+
+.personality{
+    margin:0 auto 20px;
+    height: 80px;
+    width: 50%;
+    border: 2px solid black;
+}
+
+.stats{
+    display: flex;
+    height: fit-content;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.secondaryStats{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+
+}
+.primaryStats{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 100%;
+    gap: 5px;
+    grid-template-columns: repeat(2,1fr);
+}
+.secondaryStatContent{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+.secondaryStat{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    padding: 5px;
+    border: 2px solid ;
+    height: 38px;
+    /* width:80%; */
+}
+.secondaryStat h2{
+    margin: 0;
+    padding: 0;
+}
+.statInfos{
+    text-align: center;
+    padding: 5px;
+    border: 2px solid ;
+    height: 80px;
+    /* width:80%; */
+}
+
+.statInfos h4{
+    font-weight: 500;
+    
+}
+
+.newObjectContent{
+    border: 2px solid green;
+}

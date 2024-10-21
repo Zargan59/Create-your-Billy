@@ -1,0 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    font-family: "Oswald", system-ui;
+}
+
+a{
+    color: inherit;
+    text-decoration: none;
+}

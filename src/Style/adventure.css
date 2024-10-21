@@ -1,0 +1,61 @@
+.chooseSave{
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 100px;
+}
+.chooseSave h1 {
+    margin-bottom: 50px ;
+    padding-bottom: 25px;
+}
+
+.saveContent{
+    border: 2px solid ;
+    height: 200px;
+    width: 100%;
+    cursor: pointer;
+    border-radius: 5px;
+
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.saveContent h2{
+    padding: 20px;
+    font-size: 24px;
+}
+.SavesContent{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.saveEmpty{
+    text-align: center;
+    font-size: 28px;
+    padding: 20px ;
+    font-weight: 600;
+
+}
+.billyType{
+    font-size: 28px;
+}
+
+.infoSaveContent{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    font-weight: 600;
+    font-size: 18px;
+
+}
+.infoSaveContent .pageInfo{
+    font-weight: bold;
+}
+
+.adventureContent{
+    border: 2px solid;
+}
