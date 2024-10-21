@@ -2,9 +2,10 @@ import SelectEquipement from "../selectEquipement";
 import { equipement } from "../../Data/equipement";
 import Button from "../utils/button";
 import { useEffect, useState } from "react";
+import { useSelector } from "react-redux";
 
 import { useDispatch } from "react-redux";
-import { addEquipement, GetStat, SaveStat, UpdateSate } from "../../Redux/action";
+import { AddEquipement, SaveStat, UpdatePvMax, UpdateSate } from "../../Redux/action";
 import { RemoveStat } from "../../Redux/action";
 import { DefineBilly } from "../../Redux/action";
 
@@ -14,7 +15,7 @@ export default function Starter({savePicked}) {
     startEquipement2: [],
     startEquipement3: [],
   });
-
+  const Stamina = useSelector((state)=>state.stat.stamina)
   const [starterChanged, setStarterChanged] = useState();
   const dispatch = useDispatch();
 
@@ -83,12 +84,12 @@ export default function Starter({savePicked}) {
           //Définir mon billy
         defineBilly()
           //Définir les PV
-
+          dispatch(UpdatePvMax(Stamina*3))
           
           //J'ajoutes mon équipement à mon inventaire
-        dispatch(addEquipement(starter1))
-        dispatch(addEquipement(starter2))
-        dispatch(addEquipement(starter3))
+        dispatch(AddEquipement(starter1))
+        dispatch(AddEquipement(starter2))
+        dispatch(AddEquipement(starter3))
           //J'enlève le choix de l'équipement
 
           //J'ajoute du contenu ?

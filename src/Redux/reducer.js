@@ -1,4 +1,4 @@
-import { DEFINE_BILLY,INITIAL_STAT, GET_STAT, SAVE_STAT, UPDATE_STAT,REMOVE_STAT,ADD_EQUIPEMENT } from "./action"
+import { DEFINE_BILLY,INITIAL_STAT, GET_STAT, SAVE_STAT, UPDATE_STAT,REMOVE_STAT,ADD_EQUIPEMENT, UPDATE_MAXPV } from "./action"
 const currentSave = localStorage.getItem("currentSave")
 const initialStat = JSON.parse(localStorage.getItem(currentSave)) || {
     hability: 2,
@@ -62,6 +62,11 @@ export default function statReducer(state = initialStat, action){
                 return{
                     ...state,
                     inventory : [...state.inventory, action.payload ]
+                }
+                case UPDATE_MAXPV : 
+                return{
+                    ...state,
+                    PVmax : action.payload
                 }
 
                 default: 

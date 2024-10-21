@@ -1,8 +1,12 @@
-
+Pusher dans l'inventaire l'objet avec ses stats
 Définir les changements dans les cas particuliers
 Supprimer une partie
+Mettre à jour les parties
+Sauvegarder la partie
 Ajouter un inventaire
 Pouvoir incrémenter les stats manuellement
-Définir les pv et les pv max / pv max de base et pvmax modifié
-
+Supprimer un objet de l'inventaire
+Création de la modale pour l'erreur de starter et pour tout le reste du jeux
+Gestion des combats
+Ajout des succès
 Vérifier qu'il n'y'ait pas d'erreur lors de l'ajout de stats hors starter sinon besoin de recalculer à chaque fois l'inventaire

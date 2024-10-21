@@ -1,6 +1,5 @@
 import { useSelector } from "react-redux";
 import Stats from "./stat";
-import { useEffect, useState } from "react";
 
 export default function CharacterTab() {
  const stats =  useSelector((state)=> state.stat)
@@ -8,13 +7,7 @@ export default function CharacterTab() {
 
  const PlayerInfo = JSON.parse(localStorage.getItem("save1"))
  
- const Checkstamina = useSelector((state)=>state.stat.stamina)
- 
- const [pvMax, setPvMax] = useState(0)
 
- useEffect(()=>{
-  setPvMax(Checkstamina*3)
- },[Checkstamina])
 
   return (
     <div className="fichePersoContent">

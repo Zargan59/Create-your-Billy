@@ -6,6 +6,7 @@ export const INITIAL_STAT = "INITIAL_STAT"
 export const SAVE_STAT = "SAVE_STAT"
 export const GET_STAT = "GET_STAT"
 export const ADD_EQUIPEMENT = "ADD_EQUIPEMENT"
+export const UPDATE_MAXPV = 'UPDATE_MAXPV'
 
 export const UpdateSate = (stats) =>{
     return{
@@ -51,9 +52,20 @@ export const SaveStat = (save) =>{
     }
 }
 
-export const addEquipement = (equipement) =>{
+export const AddEquipement = (equipement) =>{
     return{
         type : "ADD_EQUIPEMENT",
         payload : equipement
+    }   
+}
+
+export const RemoveEquipement = ()=>{
+    
+} 
+
+export const UpdatePvMax = (state) =>{
+    return{
+        type: "UPDATE_MAXPV",
+        payload : state
     }
 }
