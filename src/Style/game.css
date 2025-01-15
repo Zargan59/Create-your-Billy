@@ -124,3 +124,56 @@ select {
 .newObjectContent{
     border: 2px solid green;
 }
+.flex{
+    display: flex;
+}
+.blackBorder{
+    border: 2px solid black;
+    min-height: 150px;
+    width: 650px;
+    padding: 10px;
+    border-radius: 10px;
+
+}
+
+.inventoryContent{
+    padding: 20px;
+    display: grid;
+    height: fit-content;
+    gap: 15px;
+}
+.inventoryContent h2{
+    height: fit-content;
+}
+
+.inventory{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.objectInfos{
+border: 2px solid pink;
+width: 90%;
+display: grid;
+grid-template-columns: repeat(4, 1fr);
+gap: 20px;
+align-items: center;
+}
+.objectName {
+    width: 150px;
+}
+
+
+.addEquipementButton{
+    margin-top: auto ;
+    margin-left: auto;
+}
+.inventoryRow{
+    display: flex;
+}
+
+.inventoryRow button{
+    margin-left: auto;
+    
+}

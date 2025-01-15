@@ -1,103 +1,104 @@
 export const equipement = [
   {
+    id: "",
     name: "",
     tag: "",
-    stats: {
-      hability: 0,
-    },
+    stats: {},
   },
   {
     name: "L'épée",
     tag: "Arme",
     stats: {
-      hability: 4,
+      habilité: 4,
     },
   },
   {
     name: "La lance",
     tag: "Arme",
     stats: {
-      hability: 3,
-      agility: 1,
+      habilité: 3,
+      adresse: 1,
     },
   },
   {
     name: "La Morgensten",
     tag: "Arme",
     stats: {
-      hability: 1,
-      stamina: 1,
-      damage: 1,
+      habilité: 1,
+      endurance: 1,
+      dégats: 1,
     },
-  },{
+  },
+  {
     name: "L'arc",
     tag: "Arme",
     stats: {
-      hability: 3,
-      agility: 1,
-      critical: 4,
+      habilité: 3,
+      adresse: 1,
+      critique: 4,
     },
-  },{
+  },
+  {
     name: "Cotte de maille",
     tag: "equipement",
     stats: {
-      hability: -1,
-      agility: -1,
-      stamina: 1,
-      armor: 2,
+      habilité: -1,
+      adresse: -1,
+      endurance: 1,
+      armure: 2,
     },
   },
   {
     name: "La Marmite",
     tag: "equipement",
     stats: {
-      stamina: 2,
-      armor: 1,
+      endurance: 2,
+      armure: 1,
     },
-  },{
+  },
+  {
     name: "Le pamphlet touristique",
     tag: "equipement",
     stats: {
-      luck: 4,
+      chance: 4,
     },
   },
   {
     name: "Le kit de soin",
     tag: "equipement",
     stats: {
-      luck: 1,
+      chance: 1,
     },
   },
   {
     name: "La fourche",
     tag: "tools",
     stats: {
-      hability: 1,
-      stamina: 3
+      habilité: 1,
+      endurance: 3,
     },
   },
   {
     name: "La dague",
     tag: "tools",
     stats: {
-      hability: 1,
-      stamina: 6
+      habilité: 1,
+      endurance: 6,
     },
   },
   {
     name: "Le kit d'escalade",
     tag: "tools",
     stats: {
-      agility: 1,
+      adresse: 1,
     },
   },
   {
     name: "Le sac de grains",
     tag: "tools",
     stats: {
-      luck: 2,
-      stamina: 2
+      chance: 2,
+      endurance: 2,
     },
   },
-
 ];

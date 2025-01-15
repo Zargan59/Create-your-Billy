@@ -1,11 +1,10 @@
 import { useSelector } from "react-redux";
 import Stats from "./stat";
 
-export default function CharacterTab() {
- const stats =  useSelector((state)=> state.stat)
- const {hability, agility, stamina, luck, damage, armor, critical, PVmax, gold, glory } = stats
-
- const PlayerInfo = JSON.parse(localStorage.getItem("save1"))
+export default function CharacterTab({save}) {
+ const stats =  useSelector((state)=> state.stat.saveData)
+ const {habilité, adresse, endurance, chance, dégats, armure, critique, PVmax, or, gloire } = stats
+ const PlayerInfo = JSON.parse(localStorage.getItem(save))
  
 
 
@@ -21,16 +20,16 @@ export default function CharacterTab() {
       </div>
       <div className="stats">
         <div className="primaryStats">
-          <Stats name={hability} title="Habilité" />
-          <Stats name={stamina} title="Endurance" />
-          <Stats name={agility} title="Adresse" />
-          <Stats name={luck} title="Chance" />
+          <Stats name={habilité} title="Habilité" />
+          <Stats name={endurance} title="Endurance" />
+          <Stats name={adresse} title="Adresse" />
+          <Stats name={chance} title="Chance" />
         </div>
         <div className="secondaryStats">
-          <Stats name={damage} title="Dégats" />
-          <Stats name={armor} title="Armure" />
-          <Stats name={critical} title="Critique" />
-          <Stats SecondaryStat name={gold} title="Richesse" name2={glory} title2="Gloire" />
+          <Stats name={dégats} title="Dégats" />
+          <Stats name={armure} title="Armure" />
+          <Stats name={critique} title="Critique" />
+          <Stats SecondaryStat name={or} title="Richesse" name2={gloire} title2="Gloire" />
         </div>
       </div>
     </div>

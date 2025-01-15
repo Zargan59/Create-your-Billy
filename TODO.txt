@@ -1,0 +1,34 @@
+Ajouter un inventaire
+Supprimer un objet de l'inventaire
+Message pour Supprimer une partie
+Sauvegarder la partie
+Pouvoir incrémenter les stats manuellement
+Création de la modale pour l'erreur de starter (objet pris en double) et pour tout le reste du jeux
+Ajout des succès
+Gestion des combats
+
+
+
+Vérifier qu'il n'y'ait pas d'erreur lors de l'ajout de stats hors starter sinon besoin de recalculer à chaque fois l'inventaire
+Définir si la date de la sauvegarde correspond à la date de création où à la date de la dernière partie lancé
+Pour push les succès réussis dans le LS, faut envoyer ca dans un tableau
+
+Au dernier épisode : 
+
+Petit soucis : le useSelector va me chercher le premier inventaire qu'il trouve et pas l'inventaire du slot de la save
+=> Enfaite, dans le reducer je vais chercher dans le LS la currentSave mais faut que je le mète à jour quand je change de save
+Pareil pour la création de la partie, ca marche plus instantanément parce que j'utilise plus de useSelector. => solution : Faire un reducer uniquement pour les saves
+
+
+
+Faut tout refaire, corriger un par un les éléments déjà fais 
+
+
+
+
+
+
+
+
+Comment faire pour aller checker ce qu'il y'a dans l'inventaire de la partie en temps réel.
+J'arrive à récupérer sur quelle sauvegarde est le joueur mais ca ne se met pas à jour dans le reducer

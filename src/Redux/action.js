@@ -4,11 +4,13 @@ export const REMOVE_STAT = "REMOVE_STAT"
 export const DEFINE_BILLY = "DEFINE_BILLY"
 export const INITIAL_STAT = "INITIAL_STAT" 
 export const SAVE_STAT = "SAVE_STAT"
-export const GET_STAT = "GET_STAT"
+export const GET_SAVE = "GET_SAVE"
 export const ADD_EQUIPEMENT = "ADD_EQUIPEMENT"
 export const UPDATE_MAXPV = 'UPDATE_MAXPV'
+export const UPDATE_CURRENTSAVE = "UPDATE_CURRENTSAVE"
 
-export const UpdateSate = (stats) =>{
+export const UpdateState = (stats) =>{
+    //le stats doit avoir un format objet
     return{
         type: "UPDATE_STAT",
         payload: stats
@@ -38,9 +40,10 @@ export const DefineBilly = (stats, save) =>{
     }
 }
 
-export const GetStat = (save)=>{
+export const GetSave = (save)=>{
+    console.log("J'ai pris la save", save)
     return{
-        type: "GET_STAT",
+        type: "GET_SAVE",
         payload : save
     }
 }
@@ -67,5 +70,12 @@ export const UpdatePvMax = (state) =>{
     return{
         type: "UPDATE_MAXPV",
         payload : state
+    }
+}
+
+export const changeCurrentSave = (save)=>{
+    return{
+        type : "UPDATE_CURRENTSAVE",
+        payload : save
     }
 }
